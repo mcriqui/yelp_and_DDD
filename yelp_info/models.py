@@ -7,8 +7,9 @@ class Episode(models.Model):
     city = models.CharField(null=True, blank=True, max_length=30)
     state = models.CharField(null=True, blank=True, max_length=30)
     business_id = models.CharField(null=True, blank=True, max_length=100)
-    date = models.DateField()
+    restaurant = models.CharField(null=True, blank=True, max_length=30)
+    rating = models.IntegerField(null=True, blank=True)
 
-    def __init__(self):
-        return self.business_id
+    def __str__(self):
+        return self.restaurant
 
