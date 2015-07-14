@@ -86,13 +86,15 @@
 }
 
 .map_title{
-    text-align: center
+    text-align: center;
+    padding-top: 5em;
+    font-family: 'Droid Serif', serif;
 }
 
 .description{
     text-align: center;
     padding-top: 3em;
-    padding-bottom: 1em;
+    padding-bottom: 3em;
     font-family: 'Droid Sans', sans-serif;
 }
 
@@ -124,4 +126,27 @@
     background: #000000;
     overflow: hidden;
     text-align: center
+}
+
+.fact{
+    border-radius: 2em;
+    /*border: solid  .25em;*/
+    padding-right: .5em;
+    padding-left: .5em;
+    text-align: center;
+    background-color: #F2F2F2;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin-bottom: 4em
+}
+
+.number{
+    font-family: 'Droid Serif', serif;
+    font-size: 4em;
+    color: #FE6079;
+    font-weight: 900
+}
+
+.number_description{
+    font-family: 'Droid Sans', sans-serif
 }
