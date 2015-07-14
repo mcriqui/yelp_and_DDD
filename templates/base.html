@@ -1,10 +1,120 @@
-<!DOCTYPE html>
+<!DOCTYPE html>{% load staticfiles %}
 <html>
 <head>
-    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="static/css/DDD_style.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Droid+Serif:700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
+    <title>Diners Drive-Ins and Drives and Yelp</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'DDD_style.css' %}"/>
 </head>
 <body>
-    <h2>Site</h2>
+    <div class="jumbotron restaurant_pic">
+        <div class="container-fluid">
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h1 class="title">Restaurants of</h1>
+        <h1 class="title">Diners Drive-Ins and Dives</h1>
+    </div>
+
+    <div class="container">
+        <div class="line">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="description">
+            <h4>This is a project that looks at the restaurants Guy Fieri vists in his show Diners, Drive-Ins and Drives.</br>Whenever I watch the show, I constantly question how EVERY restaurant he visits can be THAT good.</br>So, I used the Yelp API to assess just how good the restaurants he visits actually are. See my very scientific results below.</h4>
+        </div>
+    </div>
+
+   <div class="container">
+        <div class="average">
+            <h3>The average Yelp Review is <span class="average_stars">3.80</span> stars out of a possible 5.</h3>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="map_title">
+            <h3>Map of all the US Restaurants on Diners, Drive-Ins and Dives</h3>
+        </div>
+        <div class="map">
+            <script src="https://embed.github.com/view/geojson/mcriqui/Diners_DriveIns_and_Dives/master/diners_driveins_dives_map.json" class="center-block">
+            </script>
+        </div>
+    </div>
+    <div class="scale">
+        <div class="row">
+        <div class="col-lg-2">
+        </div>
+            <div class="col-lg-1">
+                <div class="five_green">
+                </div>
+                <div class="scale_text">
+                    <p>5 Stars</p>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <div class="four_five_green">
+                </div>
+                <div class="scale_text">
+                    <p>4.5 Stars</p>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <div class="four_green">
+                </div>
+                <div class="scale_text">
+                    <p>4 Stars</p>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <div class="three_five_green">
+                </div>
+                <div class="scale_text">
+                    <p>3.5 Stars</p>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <div class="three_green">
+                </div>
+                <div class="scale_text">
+                    <p>3 Stars</p>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <div class="two_five_green">
+                </div>
+                <div class="scale_text">
+                    <p>2.5 Stars</p>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <div class="two_green">
+                </div>
+                <div class="scale_text">
+                    <p>2 Stars</p>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <div class="closed">
+                    <p>X</p>
+                </div>
+                <div class="scale_text">
+                    <p>Closed</p>
+                </div>
+            <div class="lg-col-2">
+            </div>
+            </div>
+        </div>
+    </div>
+
+
 
 </body>
 </html>
