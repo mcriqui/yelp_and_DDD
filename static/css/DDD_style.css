@@ -119,6 +119,7 @@
     margin: 0 auto;
     text-align: center;
     font-family: 'Droid Sans', sans-serif;
+    margin-bottom: 2em
 }
 
 .line{
@@ -150,4 +151,16 @@
 
 .number_description{
     font-family: 'Droid Sans', sans-serif
+}
+.footer{
+    font-family:'Droid Sans', sans-serif;
+    text-align: center;
+    background-color: #F2F2F2;
+    width: 100%;
+    /*padding-top: 1em;*/
+    padding-bottom: 1em
+}
+
+.footer-text{
+    padding-top: 1em
 }
